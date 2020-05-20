@@ -9,14 +9,14 @@ import android.view.ViewGroup
 /**
  * A simple [Fragment] subclass.
  */
-class RegisterFragment : Fragment() {
+class CreateAccountFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register, container, false)
+        return inflater.inflate(R.layout.fragment_create_account, container, false)
     }
 
 }
