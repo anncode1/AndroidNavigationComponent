@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.anncode.androidnavigationcomponent.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.anncode.androidnavigationcomponent.CreateAccountFragment"
+        android:label="CreateAccountFragment"
+        tools:layout="@layout/fragment_create_account"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.anncode.androidnavigationcomponent.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.anncode.androidnavigationcomponent.MyProfileFragment"
+        android:label="MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile"/>
 </navigation>
