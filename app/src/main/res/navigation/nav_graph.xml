@@ -4,12 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
-
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.anncode.androidnavigationcomponent.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/toCreateAccountFragment"
+            app:destination="@id/createAccountFragment"/>
+        <action
+            android:id="@+id/toHomeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
         android:name="com.anncode.androidnavigationcomponent.CreateAccountFragment"
@@ -20,9 +26,4 @@
         android:name="com.anncode.androidnavigationcomponent.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
-    <fragment
-        android:id="@+id/myProfileFragment"
-        android:name="com.anncode.androidnavigationcomponent.MyProfileFragment"
-        android:label="MyProfileFragment"
-        tools:layout="@layout/fragment_my_profile"/>
 </navigation>
