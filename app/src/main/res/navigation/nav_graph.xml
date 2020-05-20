@@ -11,10 +11,12 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/toCreateAccountFragment"
-            app:destination="@id/createAccountFragment"/>
+            app:destination="@id/createAccountFragment"
+            app:enterAnim="@android:anim/fade_in"/>
         <action
             android:id="@+id/toHomeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
