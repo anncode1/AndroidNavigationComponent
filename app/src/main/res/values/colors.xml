@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="homeColor">#00FFFF</color>
+    <color name="profileColor">#00ddff</color>
+    <color name="loginColor">#9900ff</color>
+    <color name="registerColor">#6b00ff</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#a64d79</color>
 </resources>

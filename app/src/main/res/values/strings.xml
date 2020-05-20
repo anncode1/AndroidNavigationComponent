@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="account">Create an Account</string>
+    <string name="create">Create</string>
+    <string name="my_profile">My Profile</string>
 </resources>
