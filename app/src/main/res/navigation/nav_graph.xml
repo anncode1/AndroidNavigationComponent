@@ -12,7 +12,8 @@
         <action
             android:id="@+id/toCreateAccountFragment"
             app:destination="@id/createAccountFragment"
-            app:enterAnim="@android:anim/fade_in"/>
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/toHomeFragment"
             app:destination="@id/homeFragment"
@@ -22,7 +23,13 @@
         android:id="@+id/createAccountFragment"
         android:name="com.anncode.androidnavigationcomponent.CreateAccountFragment"
         android:label="CreateAccountFragment"
-        tools:layout="@layout/fragment_create_account"/>
+        tools:layout="@layout/fragment_create_account">
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.anncode.androidnavigationcomponent.HomeFragment"
